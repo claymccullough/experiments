@@ -1,3 +1,7 @@
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
 from dotenv import load_dotenv
 from langchain.chains import create_retrieval_chain, RetrievalQA
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -26,7 +30,10 @@ def process_llm_response(llm_response):
 if __name__ == '__main__':
     print('RAG')
     # load from disk
-    query = 'What does Limeade use for a message bus'
+    # query = 'What does Limeade use for a message bus'
+    # query = "Who was the fastest random speaker in the world"
+    # query = "Who led the league in scrimmage yards"
+    query = "Was Tony Romo involved in the Super Bowl?  And if so, how?"
     embedding_function = OllamaEmbeddings(model=MODEL_NAME)
     vector = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
@@ -34,7 +41,6 @@ if __name__ == '__main__':
     retriever = vector.as_retriever()
 
     # Define LLM
-    llm = Ollama(model="mistral", temperature=0)
     llm = Ollama(model="mistral",
                       temperature=0,
                       callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]))
