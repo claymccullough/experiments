@@ -1,5 +1,8 @@
 import pysqlite3
 import sys
+
+from langchain_core.prompts import ChatPromptTemplate
+
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 from langchain.agents import initialize_agent, AgentType, AgentExecutor
 from langchain_core.tools import Tool
@@ -18,43 +21,27 @@ import os
 
 from langchain_community.vectorstores.chroma import Chroma
 
+"""
+GLOBALS
+"""
 MODEL_NAME = os.environ.get("MODEL_NAME")
+EMBED_MODEL_NAME = os.environ.get("EMBED_MODEL_NAME")
 
-
-
-primes = {998: 7901, 999: 7907, 1000: 7919}
-
-
-class CalculatorInput(BaseModel):
-    question: str = Field()
-
-
-class PrimeInput(BaseModel):
-    n: int = Field()
-
-
-def is_prime(n: int) -> bool:
-    if n <= 1 or (n % 2 == 0 and n > 2):
-        return False
-    for i in range(3, int(n**0.5) + 1, 2):
-        if n % i == 0:
-            return False
-    return True
-
-
-def get_prime(n: int, primes: dict = primes) -> str:
-    return str(primes.get(int(n)))
-
-
-async def aget_prime(n: int, primes: dict = primes) -> str:
-    return str(primes.get(int(n)))
+def process_llm_response(llm_response):
+    print(llm_response['result'])
+    print('\n\nSources:')
+    for source in llm_response["source_documents"]:
+        print(source.metadata['source'])
 
 
 if __name__ == '__main__':
     print('RAG')
     # load from disk
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_uri=)
-    vector = Chroma(persist_directory="./cities_chroma_db", embedding_function=embedding_function)
+    # query = 'What does Limeade use for a message bus'
+    # query = "Who was the fastest random speaker in the world"
+    # query = "Who led the league in scrimmage yards"
+    embedding_function = OllamaEmbeddings(model=EMBED_MODEL_NAME)
+    vector = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
     # Define a retriever interface
     retriever = vector.as_retriever()
@@ -63,41 +50,26 @@ if __name__ == '__main__':
     llm = Ollama(model="mistral",
                  temperature=0,
                  callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]))
-    llm_math = LLMMathChain.from_llm(llm=llm, verbose=True)
 
-    tools = [
-        Tool(
-            name="GetPrime",
-            func=get_prime,
-            description="A tool that returns the `n`th prime number",
-            args_schema=PrimeInput,
-            coroutine=aget_prime,
-        ),
-        Tool.from_function(
-            func=llm_math.run,
-            name="Calculator",
-            description="Useful for when you need to compute mathematical expressions",
-            args_schema=CalculatorInput,
-            coroutine=llm_math.arun,
-        ),
-    ]
+    # Define prompt template
+    prompt = ChatPromptTemplate.from_template("""
+        Answer the following question based only on the provided context:
 
-    # Create agent
-    agent = initialize_agent(
-        llm=llm,
-        tools=tools,
-        agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-    )
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
-    question = "What is the product of the 998th, 999th and 1000th prime numbers?"
+        <context>
+        {context}
+        </context>
 
-    for step in agent_executor.iter({"input": question}):
-        if output := step.get("intermediate_step"):
-            action, value = output[0]
-            if action.tool == "GetPrime":
-                print(f"Checking whether {value} is prime...")
-                assert is_prime(int(value))
-            # Ask user if they want to continue
-            _continue = input("Should the agent continue (Y/n)?:\n") or "Y"
-            if _continue.lower() != "y":
-                break
+        Question: {input}
+        """)
+
+    # Create a retrieval chain to answer questions
+    qa_chain = RetrievalQA.from_chain_type(llm=llm,
+                                           chain_type="stuff",
+                                           retriever=retriever,
+                                           return_source_documents=True,
+                                           verbose=True)
+
+    while True:
+        query = input("User: ")
+        llm_response = qa_chain(query)
+        print(f'Agent: {llm_response["result"]}') # 119152398

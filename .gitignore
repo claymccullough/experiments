@@ -161,6 +161,7 @@ cython_debug/
 
 ollama_rag/data
 ollama_rag/chroma_db
+ollama_rag/old_chroma_db
 ollama_rag/cities_chroma_db
 ollama/models
 

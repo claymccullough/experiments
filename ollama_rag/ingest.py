@@ -1,6 +1,6 @@
-# import pysqlite3
-# import sys
-# sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 
 from dotenv import load_dotenv
 
@@ -16,7 +16,7 @@ from langchain_community.vectorstores.chroma import Chroma
 GLOBALS
 """
 FILE_PATH = "./data/partial_dbt.json"
-MODEL_NAME = os.environ.get("MODEL_NAME")
+MODEL_NAME = os.environ.get("EMBED_MODEL_NAME")
 BASE_URL = os.environ.get("BASE_URL")
 CHUNK_SIZE = 4000
 CHUNK_OVERLAP = 200
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     # Load into chroma
     print('LOADING INTO CHROMADB...')
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL, num_gpu=1, num_thread=12)
+    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
     db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
 
     print('DONE')
