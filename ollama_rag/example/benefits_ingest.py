@@ -15,7 +15,7 @@ from langchain_community.vectorstores.chroma import Chroma
 """
 GLOBALS
 """
-FILE_PATH = "./data/partial_dbt.json"
+FILE_PATH = "./data/2024_Limeade_Benefit_Guide.pdf"
 MODEL_NAME = os.environ.get("MODEL_NAME")
 BASE_URL = os.environ.get("BASE_URL")
 CHUNK_SIZE = 4000
@@ -33,20 +33,15 @@ if __name__ == '__main__':
     print('STARTING INGEST')
 
     print('JSONLOADER...')
-    json_loader = JSONLoader(
-        file_path=FILE_PATH,
-        jq_schema=".[]",
-        content_key="page_content",
-        metadata_func=metadata_func
-    )
+    pdf_loader = PyPDFLoader(file_path=FILE_PATH)
 
     print('SPLITTING NEW DOCUMENTS INTO CHUNKS...')
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
-    docs = text_splitter.split_documents(json_loader.load())
+    docs = text_splitter.split_documents(pdf_loader.load())
 
     # Load into chroma
     print('LOADING INTO CHROMADB...')
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL, num_gpu=1, num_thread=12)
+    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
     db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
 
     print('DONE')

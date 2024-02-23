@@ -53,10 +53,7 @@ async def aget_prime(n: int, primes: dict = primes) -> str:
 if __name__ == '__main__':
     print('RAG')
     # load from disk
-    # query = 'What does Limeade use for a message bus'
-    # query = "Who was the fastest random speaker in the world"
-    # query = "Who led the league in scrimmage yards"
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME)
+    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_uri=)
     vector = Chroma(persist_directory="./cities_chroma_db", embedding_function=embedding_function)
 
     # Define a retriever interface
