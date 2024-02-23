@@ -163,3 +163,5 @@ ollama_rag/data
 ollama_rag/chroma_db
 ollama_rag/cities_chroma_db
 ollama/models
+
+weka_master_ml/data
