@@ -9,14 +9,14 @@ load_dotenv('.env')
 import os
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import JSONLoader, PyPDFLoader
-from langchain_community.embeddings import OllamaEmbeddings, OpenAIEmbeddings
+from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores.chroma import Chroma
 
 """
 GLOBALS
 """
 FILE_PATH = "./data/partial_dbt.json"
-MODEL_NAME = os.environ.get("MODEL_NAME")
+MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME")
 BASE_URL = os.environ.get("BASE_URL")
 CHUNK_SIZE = 4000
 CHUNK_OVERLAP = 200
@@ -46,7 +46,6 @@ if __name__ == '__main__':
 
     # Load into chroma
     print('LOADING INTO CHROMADB...')
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
     embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
     db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
 

@@ -164,4 +164,7 @@ ollama_rag/chroma_db
 ollama_rag/cities_chroma_db
 ollama/models
 
+openai_rag/data
+openai_rag/chroma_db
+
 weka_master_ml/data
