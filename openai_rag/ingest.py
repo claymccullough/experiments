@@ -15,7 +15,8 @@ from langchain_community.vectorstores.chroma import Chroma
 """
 GLOBALS
 """
-FILE_PATH = "./data/partial_dbt.json"
+FILE_PATH = os.environ.get('FILE_PATH')
+DEST_PATH = os.environ.get('DEST_PATH')
 MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME")
 BASE_URL = os.environ.get("BASE_URL")
 CHUNK_SIZE = 4000
@@ -45,8 +46,8 @@ if __name__ == '__main__':
     docs = text_splitter.split_documents(json_loader.load())
 
     # Load into chroma
-    print('LOADING INTO CHROMADB...')
+    print(f'LOADING {len(docs)} DOCUMENTS INTO CHROMADB...')
     embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
-    db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
+    db = Chroma.from_documents(docs, embedding_function, persist_directory=DEST_PATH)
 
     print('DONE')

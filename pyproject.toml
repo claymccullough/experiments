@@ -12,9 +12,12 @@ python-dotenv = "^1.0.1"
 jq = "^1.6.0"
 langchain-mistralai = "^0.0.4"
 pypdf = "^4.0.2"
-pysqlite3-binary = "^0.5.2.post3"
+#pysqlite3-binary = "^0.5.2.post3"
 chromadb = "^0.4.22"
 numexpr = "^2.9.0"
+openai = "^0.28.0"
+streamlit = "^1.31.1"
+langchainhub = "^0.1.14"
 
 
 [build-system]

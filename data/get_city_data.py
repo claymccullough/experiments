@@ -1,6 +1,17 @@
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+
 import json
+import os
 from pathlib import Path
 import requests
+
+"""
+GLOBALS
+"""
+TARGET_PATH = os.environ.get('TARGET_PATH')
+
 
 if __name__ == '__main__':
     wiki_titles = ["Toronto", "Seattle", "Chicago", "Boston", "Houston", "New York City"]
@@ -20,8 +31,7 @@ if __name__ == '__main__':
         ).json()
         page = next(iter(response['query']['pages'].values()))
         wiki_text = page['extract']
-
-        data_path = Path('data')
+        data_path = Path(TARGET_PATH)
         if not data_path.exists():
             Path.mkdir(data_path)
 
@@ -31,7 +41,7 @@ if __name__ == '__main__':
             'page_content': wiki_text
         })
 
-    data_path = Path('data')
+    data_path = Path(TARGET_PATH)
     if not data_path.exists():
         Path.mkdir(data_path)
     with open(data_path / f"cities.json", 'w') as f:

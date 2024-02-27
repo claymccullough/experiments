@@ -166,5 +166,6 @@ ollama/models
 
 openai_rag/data
 openai_rag/chroma_db
+openai_rag/dbt_chroma_db
 
 weka_master_ml/data
