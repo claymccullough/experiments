@@ -47,16 +47,16 @@ if __name__ == '__main__':
     llm_math = LLMMathChain.from_llm(llm, verbose=True)
 
     # Define prompt template
-    prompt = hub.pull("hwchase17/react")
-    # prompt = ChatPromptTemplate.from_template("""
-    # Answer the following question based only on the provided context:
-    #
-    # <context>
-    # {context}
-    # </context>
-    #
-    # Question: {input}
-    # """)
+    # prompt = hub.pull("hwchase17/react")
+    prompt = ChatPromptTemplate.from_template("""
+    Answer the following question based only on the provided context:
+
+    <context>
+    {context}
+    </context>
+
+    Question: {input}
+    """)
 
     # Create a retrieval chain to answer questions
     qa_chain = RetrievalQA.from_chain_type(llm=llm,

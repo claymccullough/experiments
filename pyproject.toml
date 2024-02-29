@@ -18,6 +18,7 @@ numexpr = "^2.9.0"
 openai = "^0.28.0"
 streamlit = "^1.31.1"
 langchainhub = "^0.1.14"
+llmlingua = "^0.1.6"
 
 
 [build-system]
