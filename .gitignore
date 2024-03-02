@@ -159,9 +159,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea
 
+ollama/embedding/models
+ollama/inference/infer_models
+
 ollama_rag/data
 ollama_rag/chroma_db
 ollama_rag/cities_chroma_db
+ollama_rag/old_chroma_db/
 ollama/models
 
 openai_rag/data
