@@ -1,7 +1,7 @@
 import pysqlite3
 import sys
 
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 from langchain.agents import initialize_agent, AgentType, AgentExecutor
@@ -52,24 +52,28 @@ if __name__ == '__main__':
                  callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]))
 
     # Define prompt template
-    prompt = ChatPromptTemplate.from_template("""
+    template = """
         Answer the following question based only on the provided context:
 
         <context>
         {context}
         </context>
 
-        Question: {input}
-        """)
+        Question: {question}
+        """
 
     # Create a retrieval chain to answer questions
     qa_chain = RetrievalQA.from_chain_type(llm=llm,
                                            chain_type="stuff",
                                            retriever=retriever,
                                            return_source_documents=True,
+                                           chain_type_kwargs={"prompt": PromptTemplate(
+                                               template=template,
+                                               input_variables=["context", "question"]
+                                           )},
                                            verbose=True)
 
     while True:
         query = input("User: ")
         llm_response = qa_chain(query)
-        print(f'Agent: {llm_response["result"]}') # 119152398
+        print(f'Agent: {llm_response["result"]}') #

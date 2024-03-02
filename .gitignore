@@ -165,4 +165,7 @@ ollama_rag/old_chroma_db
 ollama_rag/cities_chroma_db
 ollama/models
 
+ollama/embedding/models
+ollama/inference/infer_models
+
 weka_master_ml/data

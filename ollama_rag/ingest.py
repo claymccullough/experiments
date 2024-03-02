@@ -15,7 +15,7 @@ from langchain_community.vectorstores.chroma import Chroma
 """
 GLOBALS
 """
-FILE_PATH = "./data/partial_dbt.json"
+FILE_PATH = "./data/dbt.json"
 MODEL_NAME = os.environ.get("EMBED_MODEL_NAME")
 BASE_URL = os.environ.get("BASE_URL")
 CHUNK_SIZE = 4000
