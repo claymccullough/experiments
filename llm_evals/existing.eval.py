@@ -41,6 +41,21 @@ cases = [
     # }
 ]
 
+tmp = """
+    Write out your explanation for each criterion like this: 
+    Explanation: write reasoning here
+    Y (Grade: Y/N)
+    
+    Example 1: Explanation: The response provides an approximate number of people in Boston, which is not exactly what was asked for. It should have given the exact number as specified in the question. 
+    Y
+    
+    Example 2: Explanation: The response provides an approximate number of people in Boston, which is not exactly what was asked for. It should have given the exact number as stated in the DATA. 
+    Y
+    
+    Example 3: Explanation: The response refers to a real quote from the text, as it provides an exact number for the population of Boston. However, it is not an exact match. 
+    N 
+"""
+
 def get_evaluator(llm, criteria: str):
     fstring = """Respond 'Y' or 'N' based on how well the following response follows the specified rubric. Grade only based on the rubric and expected response:
 
@@ -53,27 +68,15 @@ def get_evaluator(llm, criteria: str):
     Response: {output}
     ---------
     
-    Write out your explanation for each criterion like this: "Explanation: write reasoning here".
-    
-    Write out your grade on the last line like this: "Y" or "N".
-    
-    Example 1:
-    Explanation: The response provides an approximate number of people in Boston, which is not exactly what was asked for. It should have given the exact number as specified in the question.
-    Y
-    
-    Example 2:
-    Explanation: The response provides an approximate number of people in Boston, which is not exactly what was asked for. It should have given the exact number as stated in the DATA.
-    Y
-    
-    Example 3:
-    Explanation: The response refers to a real quote from the text, as it provides an exact number for the population of Boston. However, it is not an exact match
-    
-    
+    Does the submission meet the Criteria? First, write out in a step by step manner your reasoning about each criterion to be sure that your conclusion is correct.  use "Explanation: " as a prefix to your reasoning. Avoid simply stating the correct answers at the outset. Then print only the single character "Y" or "N" (without quotes or punctuation) on its own line corresponding to the correct answer of whether the submission meets all criteria, 'Y' if yes and 'N' if no. At the end, repeat the letter again by itself on a new line.
     """
 
     prompt = PromptTemplate.from_template(fstring)
     return load_evaluator(llm=llm, evaluator=EvaluatorType.LABELED_CRITERIA, criteria=criteria, prompt=prompt)
 
+"""
+TRY JSON!
+"""
 
 if __name__ == '__main__':
     # query = "What is the population of Boston"
