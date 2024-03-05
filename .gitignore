@@ -163,6 +163,12 @@ ollama/embedding/models
 ollama/inference/infer_models
 ollama/inference/models
 
+chroma_db
+
+data/*.json
+data/*.csv
+data/*.pdf
+
 ollama_rag/data
 ollama_rag/chroma_db
 ollama_rag/cities_chroma_db

@@ -22,6 +22,8 @@ from langchain_core.outputs import LLMResult
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from langchain_core.tools import Tool
 
+from llm_evals.ingest import get_embeddings
+
 load_dotenv('.env')
 
 import os
@@ -87,13 +89,14 @@ def get_ollama_model(stats_handler=OllamaStatsHandler()):
         model=INFER_MODEL_NAME,
         base_url=INFER_BASE_URL,
         temperature=0.0,
+        stop=[],
         callback_manager=CallbackManager([StreamingStdOutCallbackHandler(), stats_handler])
     )
 
 
 def get_vector_retriever():
     # Define embedding function
-    embedding_function = OllamaEmbeddings(model=EMBED_MODEL_NAME, base_url=EMBED_BASE_URL)
+    embedding_function = get_embeddings()
     vector = Chroma(persist_directory=DEST_PATH, embedding_function=embedding_function)
 
     # Define a retriever interface
