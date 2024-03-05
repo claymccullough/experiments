@@ -6,7 +6,6 @@ from llmlingua import PromptCompressor
 load_dotenv('.env')
 
 from langchain.retrievers import ContextualCompressionRetriever
-from langchain_community.document_compressors import LLMLinguaCompressor
 
 from retrievers.retriever import get_vector_retriever
 
@@ -28,7 +27,7 @@ if __name__ == '__main__':
     retriever = get_vector_retriever()
     instruction = """Use only information provided below without other sources.  If you don't know the answer, say "I don't know"."""
     # question = "What is the population of Houston, TX?"
-    question = "What is the population of New York City?"
+    question = "What is the exact population of New York City?"
     docs = retriever.get_relevant_documents(question)[:1]
     raw_context = [doc.page_content for doc in docs]
     context = "\n\n".join(raw_context)
@@ -41,8 +40,8 @@ if __name__ == '__main__':
     """)
 
     # llm_lingua = PromptCompressor("lgaalves/gpt2-dolly", device_map="cpu")
-    llm_lingua = PromptCompressor(model_name="openai-community/gpt2", device_map="cpu")
-    ratio = 0.9
+    llm_lingua = PromptCompressor(model_name="openai-community/gpt2", device_map="cuda")
+    ratio = 0.5
     target_token = -1
     compressed_prompt = llm_lingua.compress_prompt(raw_context, instruction, question, float(ratio), float(target_token))
     pprint(compressed_prompt)
