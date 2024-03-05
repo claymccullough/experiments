@@ -161,6 +161,7 @@ cython_debug/
 
 ollama/embedding/models
 ollama/inference/infer_models
+ollama/inference/models
 
 ollama_rag/data
 ollama_rag/chroma_db
