@@ -5,16 +5,17 @@ from pydantic import BaseModel
 """
 GLOBALS
 """
+MODEL = "openai-community/gpt2"
 app = FastAPI()
-llm_lingua = PromptCompressor(model_name="openai-community/gpt2", device_map="cuda")
+llm_lingua = PromptCompressor(model_name=MODEL, device_map="cuda")
 
 
 class PromptCompressionRequest(BaseModel):
     context: list[str]
     instruction: str
     question: str
-    ratio: float
-    target_token: float
+    ratio: float = -1
+    target_token: float = -1
 
 
 @app.get("/")
