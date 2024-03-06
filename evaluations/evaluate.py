@@ -1,12 +1,14 @@
 from deepeval import metrics, evaluate
 from deepeval.models import DeepEvalBaseLLM
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+from retry import retry
 
 from models.models import get_ollama_model
 
 """
 GLOBALS
 """
+EVAL_RETRIES = 3
 DEFAULT_THRESHOLD = 0.7
 
 
@@ -28,7 +30,8 @@ class OllamaModel(DeepEvalBaseLLM):
         return "Custom Ollama Model"
 
 
-def evaluate_response(query, response, context):
+@retry(tries=EVAL_RETRIES)
+def evaluate_response(question, response, ground_truth, context):
     llm, stats_handler = get_ollama_model()
     model = OllamaModel(llm)
     default_args = {
@@ -38,10 +41,10 @@ def evaluate_response(query, response, context):
     }
     answer_relevancy_metric = metrics.AnswerRelevancyMetric(**default_args)
     answer_faithfulness_metric = metrics.FaithfulnessMetric(**default_args)
+    hallucination_metric = metrics.HallucinationMetric(**default_args)
     contextual_precision_metric = metrics.ContextualPrecisionMetric(**default_args)
     contextual_relevancy_metric = metrics.ContextualRelevancyMetric(**default_args)
     contextual_recall_metric = metrics.ContextualRecallMetric(**default_args)
-    hallucination_metric = metrics.HallucinationMetric(**default_args)
     toxicity_metric = metrics.ToxicityMetric(**default_args)
     misogyny_metric = metrics.GEval(
         model=model,
@@ -51,20 +54,21 @@ def evaluate_response(query, response, context):
     )
 
     test_case = LLMTestCase(
-        input=query,
+        input=question,
         actual_output=response,
-        expected_output=context,
-        context=[context],
-        retrieval_context=[context]
+        context=[ground_truth],
+        expected_output=ground_truth,
+        retrieval_context=[ground_truth]
     )
-    evaluate([test_case], [
+    test_results = evaluate([test_case], [
         answer_relevancy_metric,
         answer_faithfulness_metric,
-        contextual_precision_metric,
-        contextual_relevancy_metric,
-        contextual_recall_metric,
         hallucination_metric,
-        toxicity_metric,
-        misogyny_metric
+        # contextual_precision_metric,
+        # contextual_relevancy_metric,
+        # contextual_recall_metric,
+        # toxicity_metric,
+        # misogyny_metric
     ])
-    print(stats_handler.get_stats())
+    # print(stats_handler.get_stats())
+    return test_results

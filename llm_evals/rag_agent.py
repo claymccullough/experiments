@@ -88,7 +88,7 @@ def get_ollama_model(stats_handler=OllamaStatsHandler()):
     return Ollama(
         model=INFER_MODEL_NAME,
         base_url=INFER_BASE_URL,
-        temperature=0.0,
+        temperature=0.7,
         stop=[],
         callback_manager=CallbackManager([StreamingStdOutCallbackHandler(), stats_handler])
     )

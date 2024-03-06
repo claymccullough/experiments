@@ -1,9 +1,12 @@
+from uuid import UUID
+
 from dotenv import load_dotenv
+
 load_dotenv('.env')
 
 import os
 import threading
-from typing import Any
+from typing import Any, Dict, Optional, List
 
 from langchain_community.llms.ollama import Ollama
 from langchain_core.callbacks import BaseCallbackHandler, CallbackManager, StreamingStdOutCallbackHandler
@@ -28,6 +31,14 @@ class OllamaStatsHandler(BaseCallbackHandler):
     def __init__(self) -> None:
         super().__init__()
         self._lock = threading.Lock()
+
+    def reset(self):
+        with self._lock:
+            self.total_duration = 0
+            self.start_input_tokens = 0
+            self.total_input_tokens = 0
+            self.final_output_tokens = 0
+            self.total_output_tokens = 0
 
     """
     : get this completely working for OLLAMA
@@ -68,6 +79,6 @@ def get_ollama_model(stats_handler=OllamaStatsHandler()):
         model=INFER_MODEL_NAME,
         base_url=INFER_BASE_URL,
         temperature=0.0,
-        stop=[],
-        callback_manager=CallbackManager([StreamingStdOutCallbackHandler(), stats_handler])
+        # stop=[],
+        callback_manager=CallbackManager([stats_handler])
     ), stats_handler

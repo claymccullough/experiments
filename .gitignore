@@ -183,3 +183,6 @@ llm_evals/data
 llm_evals/chroma_db
 
 weka_master_ml/data
+
+embeddings
+evaluate_rag/evaluations
