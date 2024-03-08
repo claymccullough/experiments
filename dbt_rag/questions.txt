@@ -1,0 +1,11 @@
+What is the dbt_version of the project?
+- OpenAI: Good
+- Local: Good
+
+How many bytes does the `model.limeade_lakehouse.sil_ls_programs` model consume?
+- OpenAI: Good, no info on this and OpenAI picks up
+- Local: Bad, hallucinates
+
+
+
+How many bytes does the programs model consume?

@@ -15,10 +15,12 @@ def get_embeddings():
     return OllamaEmbeddings(model=EMBED_MODEL_NAME, base_url=EMBED_BASE_URL)
 
 
-def get_vector_retriever(file_path=DEST_PATH):
+def get_vector(file_path=DEST_PATH):
     # Define embedding function
     embedding_function = get_embeddings()
-    vector = Chroma(persist_directory=file_path, embedding_function=embedding_function)
+    return Chroma(persist_directory=file_path, embedding_function=embedding_function)
 
+
+def get_vector_retriever(file_path=DEST_PATH):
     # Define a retriever interface
-    return vector.as_retriever()
+    return get_vector(file_path=file_path).as_retriever()
