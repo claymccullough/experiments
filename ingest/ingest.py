@@ -83,7 +83,7 @@ if __name__ == '__main__':
     #     content_key="page_content",
     #     metadata_func=metadata_func
     # )
-    folder_path = f'{INGEST_BASE_PATH}/dbt-test'
+    folder_path = f'{INGEST_BASE_PATH}/{INGEST_NAME}'
     if os.path.isdir(folder_path):
         shutil.rmtree(folder_path)
 
@@ -94,9 +94,11 @@ if __name__ == '__main__':
         metadata_func=metadata_func
     )
     embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
-    docs = text_splitter.split_documents(json_loader.load())
-    db = Chroma.from_documents(json_loader.load(), embedding_function, persist_directory=f'{INGEST_BASE_PATH}/dbt-test')
+    # text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
+    # docs = text_splitter.split_documents(json_loader.load())
+    docs = json_loader.load()
+    print(f'LOADING {len(docs)} DOCUMENTS...')
+    db = Chroma.from_documents(docs, embedding_function, persist_directory=f'{INGEST_BASE_PATH}/{INGEST_NAME}')
 
     print('DONE')
 

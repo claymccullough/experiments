@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What is the location of the `model.limeade_lakehouse.gold_stg_metrics_activity_participations` model?",
+    "answer": "dbfs:/mnt/datalake/gold/stg/metrics_activity_participations"
+  },
+  {
+    "question": "Which model uses biometric screening in its ranking process?",
+    "answer": "model.limeade_lakehouse.gold_stg_metrics_screening_completions"
+  },
+  {
+    "question": "Which model checks the total number of users who have completed their Well-Being Assessment against the total number of registered users?",
+    "answer": "model.limeade_lakehouse.gold_stg_metrics_wba_completions"
+  },
+  {
+    "question": "What table stores activity features for activity recommenders?",
+    "answer": "model.limeade_lakehouse.sil_ar_activity_features"
+  }
+]

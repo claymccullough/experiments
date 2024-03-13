@@ -9,3 +9,6 @@ How many bytes does the `model.limeade_lakehouse.sil_ls_programs` model consume?
 
 
 How many bytes does the programs model consume?
+
+how many tables does the root user own in the dbt project
+

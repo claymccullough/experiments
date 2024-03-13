@@ -1,0 +1,38 @@
+[
+  {
+    "question": "How many rows does the `model.limeade_lakehouse.sil_ai_identity_events` model have?",
+    "answer": "727576 rows."
+  },
+  {
+    "question": "How many bytes does the `model.limeade_lakehouse.sil_ai_identity_events` model consume?",
+    "answer": "111039368 bytes."
+  },
+  {
+    "question": "When was the 'model.limeade_lakehouse.sil_ai_limeadedotcom_event' model created?",
+    "answer": "2024-02-13T15:04:48.111679"
+  },
+  {
+    "question": "How many rows does the `model.limeade_lakehouse.sil_lp_incentive_programs` model have?",
+    "answer": "According to the context, the answer is \"N/A\"."
+  },
+  {
+    "question": "What schema is the `model.limeade_lakehouse.sil_lp_incentive_programs` model in?",
+    "answer": "silver_limeade_platform"
+  },
+  {
+    "question": "Which user owns the model.limeade_lakehouse.gold_stg_user_tags_termination_status model?",
+    "answer": "root"
+  },
+  {
+    "question": "What type is model.limeade_lakehouse.sil_ai_limeadedotcom_events_slim?",
+    "answer": "view"
+  },
+  {
+    "question": "What schema is model.limeade_lakehouse.sil_ai_limeadedotcom_events_slim in?",
+    "answer": "silver_app_insights"
+  },
+  {
+    "question": "Does model.limeade_lakehouse.sil_ai_limeadedotcom_events_slim have a unique_id specified?",
+    "answer": "Yes"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which upstream models does `model.limeade_lakehouse.sil_ai_identity_events` have?",
+    "answer": "source.limeade_lakehouse.bronze_ai_limeadeone_identity.event, source.limeade_lakehouse.bronze_ai_limeadeone_identity_ds.events."
+  },
+  {
+    "question": "Does `model.limeade_lakehouse.gold_dim_dates` have any upstream models?",
+    "answer": "No"
+  },
+  {
+    "question": "Does the `model.limeade_lakehouse.gold_dim_employer_programs` model have any upstream models?",
+    "answer": "Yes"
+  },
+  {
+    "question": "Is `model.limeade_lakehouse.gold_stg_user_events_telemetry_limeadedotcom` an upstream model to `model.limeade_lakehouse.gold_dim_user_event_types`?",
+    "answer": "Yes"
+  },
+  {
+    "question": "Is `model.limeade_lakehouse.gold_dim_user_event_types` listed as an upstream model to `model.limeade_lakehouse.gold_dim_user_subgroups`?",
+    "answer": "No"
+  }
+]

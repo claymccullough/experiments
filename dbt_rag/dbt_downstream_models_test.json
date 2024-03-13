@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which downstream models does `model.limeade_lakehouse.sil_ai_identity_events` have?",
+    "answer": "model.limeade_lakehouse.gold_stg_user_events_telemetry_identity, test.limeade_lakehouse.not_null_sil_ai_identity_events_identity_event_id.939505fb74"
+  },
+  {
+    "question": "Are there any downstream models to `model.limeade_lakehouse.gold_dim_dates`",
+    "answer": "Yes"
+  },
+  {
+    "question": "Does the `model.limeade_lakehouse.admin_backfill_days` model have any downstream models?",
+    "answer": "No"
+  },
+  {
+    "question": "Is `model.limeade_lakehouse.gold_fact_resource_utilization` a downstream model to `model.limeade_lakehouse.sil_la_application_instances`?",
+    "answer": "Yes"
+  },
+  {
+    "question": "Is `model.limeade_lakehouse.sil_la_companies` listed as a downstream model to `model.limeade_lakehouse.sil_la_channels`?",
+    "answer": "No"
+  }
+]

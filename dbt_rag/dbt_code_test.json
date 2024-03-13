@@ -1,0 +1,14 @@
+[
+  {
+    "question": "How long is the `model.limeade_lakehouse.sil_ai_identity_events` model set to retain when it VACUUMs?",
+    "answer": "168 hours"
+  },
+  {
+    "question": "Is the `created_at` field of the `model.limeade_lakehouse.sil_lp_limeade_user_tags` model typecast to TIMESTAMP?",
+    "answer": "Yes"
+  },
+  {
+    "question": "Does the `model.limeade_lakehouse.sil_lp_user_activities` model have a post_hook that runs OPTIMIZE on the table?",
+    "answer": "Yes"
+  }
+]

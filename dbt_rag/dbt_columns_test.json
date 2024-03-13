@@ -1,0 +1,22 @@
+[
+  {
+    "question": "How many columns does the `model.limeade_lakehouse.sil_upmc_recommendations` model have?",
+    "answer": "9 columns"
+  },
+  {
+    "question": "Does the `model.limeade_lakehouse.sil_upmc_recommendations` model have a `silver_created_at` column?",
+    "answer": "Yes"
+  },
+  {
+    "question": "What is the `activities_hash` column for in the `model.limeade_lakehouse.sil_upmc_recommendations` model?",
+    "answer": "It is a column that contains a MD5 hash of the activities for easy comparison later."
+  },
+  {
+    "question": "What type is the `gold_updated_at` column on the `model.limeade_lakehouse.gold_dim_activities` model?",
+    "answer": "timestamp"
+  },
+  {
+    "question": "On the `model.limeade_lakehouse.gold_dim_dates` model, what type is the `is_last_day_of_year` column?",
+    "answer": "boolean"
+  }
+]

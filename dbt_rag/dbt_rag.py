@@ -1,5 +1,8 @@
+import os
+
 import pyperclip
 from dotenv import load_dotenv
+from langchain.retrievers import EnsembleRetriever
 from langchain_openai import OpenAI
 
 from models.models import get_ollama_model
@@ -9,25 +12,33 @@ load_dotenv('.env')
 import streamlit as st
 from langchain_community.callbacks import StreamlitCallbackHandler, get_openai_callback
 
-from retrievers.retriever import get_vector_retriever, get_vector
+from retrievers.retriever import get_vector_retriever, get_vector, compress_prompt
 
-retriever = get_vector_retriever(file_path='./embeddings/dbt-test')
-vector = get_vector(file_path='./embeddings/dbt-test')
+"""
+GLOBALS
+"""
+INGEST_NAME = os.environ.get('INGEST_NAME')
+
+retriever = get_vector_retriever(file_path=f'./embeddings/{INGEST_NAME}')
+# meta_retriever = get_vector_retriever(file_path=f'./embeddings/dbt_metadata')
+# col_retriever = get_vector_retriever(file_path=f'./embeddings/dbt_columns')
+# retriever = EnsembleRetriever(retrievers=[meta_retriever, col_retriever])
+vector = get_vector(file_path=f'./embeddings/{INGEST_NAME}')
 
 
 def gen_prompt(question: str):
     docs = retriever.get_relevant_documents(question)
-    context = "\n\n".join([doc.page_content for doc in docs])
-    return f"""
+    page_content = [doc.page_content for doc in docs]
+    context = "\n\n".join(page_content)
+    prompt =  f"""
     # CONTEXT #
-    Use the following relevant context from the DBT Project to answer the user's question:
     {context}
     
     #############
     
     # OBJECTIVE #
-    Answer the question ```{question}``` between three backticks to the best of your acquired knowledge.  Think step-by-step. 
-    If you don't know the answer or cannot deduce it from the supplied Context, don't make up an answer.  Simply say 'I do not know.'
+    Think step-by-step.  Analyze the given context above to answer the question ```{question}``` between three backticks 
+    to the best of your acquired knowledge.
     
     #############
     
@@ -48,8 +59,15 @@ def gen_prompt(question: str):
     #############
     
     # RESPONSE #
-    Finally, keep the response concise and succinct.
-    """
+    Finally, keep the response concise and succinct. Do not say "Based on the context provided", or "Based on the context given", just answer the question.
+    If you don't know the answer or cannot deduce it from the supplied Context, don't make up an answer.  Simply say 
+    'I do not know.' Double-check that the model referenced in the answer matches the question's model EXACTLY.
+    
+    Answer:"""
+    return {
+        'prompt': prompt,
+        'context': page_content,
+    }
 
 
 if __name__ == '__main__':
@@ -80,10 +98,13 @@ if __name__ == '__main__':
         with st.chat_message('assistant'):
             st_callback = StreamlitCallbackHandler(st.container())
             prompt = gen_prompt(question)
-            pyperclip.copy(prompt)
-            st.write('COPIED')
+            docs = retriever.get_relevant_documents(question)
+            context = "\n\n\n".join([doc.page_content for doc in docs])
+            # pyperclip.copy(prompt)
+            # st.write('COPIED')
             response = llm.invoke(input=prompt, config={"callbacks": [st_callback]})
             st.write(response)
+            st.write(f'######## CONTEXT ########\n\n{context}')
             # with get_openai_callback() as cb:
             #     response = llm.invoke(input=prompt, config={"callbacks": [st_callback]})
             #     st.write(cb)
