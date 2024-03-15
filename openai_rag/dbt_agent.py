@@ -77,8 +77,13 @@ if __name__ == '__main__':
         )
     ]
 
-    agent = initialize_agent(tools, llm,
-                             agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
+    agent = initialize_agent(
+        tools=tools,
+        llm=llm,
+        agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+        verbose=True,
+        handle_parsing_errors=True
+    )
 
     # query = """Who is the owner of the DIM_CUSTOMERS_V1 model?"""
     # query = """When was the DIM_CUSTOMERS_V1 model created?"""

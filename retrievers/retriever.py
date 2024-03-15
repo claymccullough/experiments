@@ -44,14 +44,14 @@ def get_vector(file_path=DEST_PATH):
     return Chroma(persist_directory=file_path, embedding_function=embedding_function)
 
 
-def get_vector_retriever(file_path=DEST_PATH):
+def get_vector_retriever(file_path=DEST_PATH, k=4):
     # # Define a retriever interface
     # return MyRetriever(
     #     vectorstore=get_vector(file_path=file_path),
     #     search_type="similarity",
     #     search_kwargs={'k': 4}
     # )
-    return get_vector(file_path=file_path).as_retriever(search_kwargs={'k': 4})
+    return get_vector(file_path=file_path).as_retriever(search_kwargs={'k': k})
 
 
 def compress_prompt(req_json={}):

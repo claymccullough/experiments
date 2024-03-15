@@ -1,0 +1,175 @@
+[
+  {
+    "question": "What type of dbt model is this?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What schema does this dbt model belong to?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How many bytes does this dbt model contain?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How many rows does this dbt model have?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "When was this dbt model created?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the unique id of this dbt model",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How were tables joined to generate this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What post_hooks does this dbt model have?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Explain the logic behind the DBT model.",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How are rows filtered in the DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Is this DBT model an incremental model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What source tables were used to generate this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How many columns does this dbt model have?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the description for this column on this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the data type for this column on this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Does this DBT model have a column like this?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Does this DBT model have any date columns?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the primary key of ths DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the spark configuration for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the location of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What Serde library is used for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the input format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the output format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What are the statistics for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What upstream models does this dbt model have?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model have any upstream models?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is this dbt model upstream to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "How many upstream models does this dbt model have?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Check the upstream model flow for this dbt model and that dbt model. Will that dbt model be impacted if this dbt model changes?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model have any upstream models named like this?",
+    "route": "dbt_upstream_models"
+  },
+
+  {
+    "question": "What downstream models does this dbt model have?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model have any downstream models?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model downstream from that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "How many downstream models does this dbt model have?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Check the downstream model flow for this dbt model from that dbt model. Will this dbt model be impacted if that dbt model changes?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model have any downstream models named like this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What is the capital of France?",
+    "route": null
+  },
+  {
+    "question": "how many people live in the US?",
+    "route": null
+  },
+  {
+    "question": "when is the best time to visit Bali?",
+    "route": null
+  },
+  {
+    "question": "how do I learn a language?",
+    "route": null
+  },
+  {
+    "question": "tell me an interesting fact",
+    "route": null
+  },
+  {
+    "question": "what is the best programming language?",
+    "route": null
+  },
+  {
+    "question": "I'm interested in learning about llama 2",
+    "route": null
+  }
+]

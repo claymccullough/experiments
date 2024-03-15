@@ -1,6 +1,7 @@
 from uuid import UUID
 
 from dotenv import load_dotenv
+from langchain_community.chat_models import ChatOllama
 
 load_dotenv('.env')
 
@@ -81,4 +82,13 @@ def get_ollama_model(stats_handler=OllamaStatsHandler()):
         temperature=0.0,
         # stop=[],
         callback_manager=CallbackManager([stats_handler])
+    ), stats_handler
+
+
+def get_chat_ollama_model(stats_handler=OllamaStatsHandler()):
+    return ChatOllama(
+        model=INFER_MODEL_NAME,
+        base_url=INFER_BASE_URL,
+        temperature=0.0,
+        callback_manager=CallbackManager([stats_handler]),
     ), stats_handler

@@ -31,7 +31,9 @@ INGEST_NAME = os.environ.get("INGEST_NAME")
 # CHUNK_VARIATION_FILES = [f'{INGEST_BASE_PATH}/{INGEST_NAME}x{chunk_size}x{chunk_overlap}' for chunk_size, chunk_overlap in
 #                          CHUNK_VARIATIONS]
 
-print(MODEL_NAME, BASE_URL)
+
+def get_ollama_embeddings():
+    return OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
 
 
 def metadata_func(record: dict, metadata: dict) -> dict:
@@ -93,7 +95,7 @@ if __name__ == '__main__':
         content_key="page_content",
         metadata_func=metadata_func
     )
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
+    embedding_function = get_ollama_embeddings()
     # text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
     # docs = text_splitter.split_documents(json_loader.load())
     docs = json_loader.load()

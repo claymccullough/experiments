@@ -1,0 +1,1470 @@
+[
+  {
+    "question": "Can you determine the type of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the classification for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What category does this dbt model fall under?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you specify the type of dbt model this is?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you know what kind of dbt model this is?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What model type is represented by this dbt instance?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Under what type classification does this dbt model come?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Which dbt model type does this example belong to?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I'm trying to figure out the dbt model type here, can you help?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the type designation for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you identify the schema for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the schema associated with this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "In which schema is this dbt model located?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you tell me the schema name for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you know the schema of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What schema is this dbt model a part of?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Under which schema does this dbt model fall?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Which schema contains this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I need the schema name for this dbt model, can you provide it?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the name of the schema holding this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you tell me the byte size of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the total byte count for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How many bytes make up this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you calculate the size in bytes of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you have the byte size information for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the byte size of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How large in bytes is this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I need the byte count for this dbt model, can you provide it?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the exact size in bytes of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you inform me about the size of this dbt model in bytes?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you provide the row count for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the total number of rows in this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How many rows are there in this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you tell me the number of rows this dbt model consists of?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you know how many rows this dbt model contains?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the row count of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How extensive, in terms of rows, is this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I need to know the number of rows in this dbt model, can you help?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What number of rows does this dbt model comprise?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you specify the row quantity within this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you tell me the creation date of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the creation timestamp for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "When exactly was this dbt model initiated?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you provide the date of inception for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you have the creation date of this dbt model available?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the initial creation date of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How old is this dbt model in terms of its creation date?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I'm curious about the start date of this dbt model, can you share it?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What date marks the creation of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "When did the development of this dbt model begin?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you provide the unique identifier for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What's the unique ID assigned to this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Could you tell me the unique id of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Do you know the specific unique id for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the distinct identifier of this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "How is this dbt model uniquely identified?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "I need the unique ID for this dbt model, can you help?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What unique identification number is given to this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Which unique ID is associated with this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "What is the singular identification code for this dbt model?",
+    "route": "dbt_metadata"
+  },
+  {
+    "question": "Can you explain the table join logic used in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What method was employed to join tables in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you detail the joining of tables process for this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How exactly were the tables combined to construct this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you know the specific join types used for this DBT model's tables?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What is the process for joining tables in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "I need information on how tables were joined in this DBT model, can you provide that?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Which joining techniques were applied to the tables in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How did the table joins work to create this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What strategies were used to join tables within this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you list the post_hooks configured for this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What are the post_hook commands in this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you detail the post_hooks used in this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you know which post_hooks are implemented in this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What post_hooks settings are specified for this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How is this dbt model utilizing post_hooks?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "I need to understand the post_hooks for this dbt model, can you help?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Which post_hooks are defined in this dbt model's configuration?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What are the configured post_hooks for this dbt model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you show me the post_hooks this dbt model uses?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you break down the reasoning behind this DBT model's construction?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What's the thought process guiding the development of this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How is the logic structured for this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you elucidate the logic employed in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you have insights into the underlying logic of this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What principles underpin the logic of this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "I'm curious about the rationale for the logic used in this DBT model. Can you explain?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How was the logic formulated for building this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What logic framework supports this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you detail the conceptual logic that this DBT model is based on?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you explain the row filtering process in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What method is used for filtering rows within this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How does this DBT model apply filters to its rows?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you describe the criteria for row filtering in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What's the logic behind row filtering in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you know how rows are selectively included or excluded in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How are rows determined to be relevant or not in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "I'm interested in the row filtering technique used in this DBT model. Can you detail it?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What filtering mechanism is in place for the rows in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you specify how rows are filtered out or kept within this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you confirm if this DBT model operates on an incremental basis?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Does this DBT model utilize an incremental update strategy?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Is the nature of this DBT model incremental?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you verify whether this DBT model is designed as an incremental model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you know if this DBT model employs incremental processing?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What indicates that this DBT model might be incremental?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Is it correct to classify this DBT model as being incremental?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Would you say this DBT model is built on an incremental framework?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you identify this DBT model as incremental in nature?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "How is this DBT model indicative of an incremental approach?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you identify the source tables that contribute to this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Which source tables are utilized in the creation of this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What are the original tables used to construct this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you list the tables that serve as sources for this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Do you know the source tables from which this DBT model is derived?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What tables form the basis for the data in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "I'm curious about the source tables feeding into this DBT model. Can you provide details?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Which tables are the starting points for the data in this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "What are the foundational tables behind this DBT model's data?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Could you specify the input tables that were used to generate this DBT model?",
+    "route": "dbt_code"
+  },
+  {
+    "question": "Can you tell me the total number of columns in this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What's the column count for this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How many columns are there in this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you provide the count of columns this dbt model contains?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do you know the exact number of columns in this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the total column number in this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How extensive, in terms of columns, is this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I need to know the number of columns this dbt model has, can you assist?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What count of columns is this dbt model comprised of?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you specify the number of columns included in this dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you provide the description for this column in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What's the detailed description for this specific column on the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How is this column described in the dbt model documentation?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you tell me what description is given for this column in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do you know the description assigned to this column within the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What does the description say about this particular column on the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I need the description for this column from the dbt model, can you help?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the description provided for this column in the context of the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you specify the description for this column as per the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What narrative is given for this column in the dbt model's schema?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you identify the data type of this column in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What data type is assigned to this specific column within the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you specify the data type for this column on the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do you know the type of data this dbt model column holds?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What's the designated data type for this column in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How is the data type for this column defined in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I need the data type information for this column on the dbt model, can you provide it?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the data type of this dbt model column?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you inform me about the data type of this column in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What kind of data type is this column set to in the dbt model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Is there a column matching this description in the DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you confirm the existence of a column like this in the DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Does this DBT model feature a column with these characteristics?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do you know if this DBT model contains a column similar to this description?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Is a column as described present in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you verify whether a column like this exists in the DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What are the chances of this DBT model having a column like this?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I'm looking for a column with specific traits in the DBT model. Does it exist?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Is there a similar column to this one in the DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you check if this DBT model includes a column that matches this description?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Are there any date columns present in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you confirm if this DBT model includes date-type columns?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Does this DBT model feature columns with date data types?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do any columns in this DBT model store date information?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I'm wondering if this DBT model has columns designated for dates. Do you know?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Are date-specific columns utilized in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you check whether this DBT model has columns that are of the date type?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What presence do date columns have in this DBT model, if any?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Is this DBT model equipped with any columns for storing dates?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How prevalent are date columns in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you identify the primary key for this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What's the primary key column in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you tell me the primary key used in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Do you know what the primary key is for this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What column serves as the primary key in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "How is the primary key defined for this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "I need to know the primary key of this DBT model, can you provide it?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "What is the designated primary key within this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Could you specify the primary key configuration for this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Which column is utilized as the primary key in this DBT model?",
+    "route": "dbt_columns"
+  },
+  {
+    "question": "Can you detail the spark configuration used for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What spark settings are applied to this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "How is the spark environment configured for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the spark configuration details for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you know the configuration of spark for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What are the specifics of the spark setup for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I need the spark configuration information for this dbt model, can you provide it?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What spark parameters are set for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you specify the spark environment settings for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the defined spark configuration for this particular dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you specify the storage location for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What's the directory path of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Where is this dbt model stored?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you tell me the file location of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you know the physical or virtual location of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the exact location where this dbt model is located?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "How can I find the location of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I need the location details for this dbt model, can you help?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What location does this dbt model reside in?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the location information for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you specify the Serde library utilized in this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What's the Serde library implementation for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Which Serde library does this dbt model use?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you identify the Serde library associated with this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you know the specific Serde library used in this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What Serde library is applied to this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I'm curious about the Serde library this dbt model relies on. Can you tell me?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the name of the Serde library employed by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the details of the Serde library used for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What serialization/deserialization library is this dbt model configured with?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you specify the input format used by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What's the data input format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Which input format does this dbt model accept?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you identify the input format of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you know the specific input format utilized in this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What format of data input is this dbt model configured to handle?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I'm curious about the input format this dbt model uses. Can you tell me?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the defined input format for data in this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the details on the input data format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What type of data input format is required by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you specify the output format generated by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What's the data output format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Which output format does this dbt model produce?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you identify the output format of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you know the specific output format utilized by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What format of data output is this dbt model configured to provide?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I'm interested in the output format this dbt model uses. Can you share?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What is the defined output format for data from this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the details on the output data format for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What type of data output format is produced by this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you provide the statistical data for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What statistics are available for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Which key statistics can you share about this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you detail the statistics related to this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Do you have access to the metrics or statistics of this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What are the critical statistics for evaluating this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "I'm interested in the statistical analysis of this dbt model. Can you provide it?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What performance statistics are recorded for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Could you provide the performance metrics for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "What statistical measurements have been taken for this dbt model?",
+    "route": "dbt_descriptions"
+  },
+  {
+    "question": "Can you list the upstream models for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What are the precursor models linked to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Which models feed into this dbt model as upstream sources?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you identify the upstream dependencies for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Do you know the models that serve as inputs to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What models are considered upstream for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "I need to know the upstream models that contribute to this dbt model, can you provide that?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Which dbt models are upstream to this one?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What source models does this dbt model depend on?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you specify the upstream dbt models for this particular model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is there any upstream model linked to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Are there upstream models for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model depend on any other models as upstream sources?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you confirm if this dbt model has upstream dependencies?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Are there any models that feed into this dbt model as upstream?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model have predecessors or upstream models?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "I'm wondering if this dbt model is connected to any upstream models, can you tell me?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you check if there are any upstream models associated with this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What upstream models, if any, does this dbt model have?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is this dbt model independent, or does it have upstream model connections?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model serve as an upstream source for that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is this dbt model a precursor to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you confirm if this dbt model is upstream to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Are there connections where this dbt model is upstream to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model feed into that dbt model as an upstream source?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is this dbt model positioned upstream to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "I'm wondering if this dbt model acts as an upstream model to that dbt model, can you verify?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you determine if this dbt model is considered upstream to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What is the upstream relationship between this dbt model and that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is there an upstream dependency from this dbt model to that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you tell me the count of upstream models for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What's the total number of upstream models linked to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "How many models feed into this dbt model as upstream sources?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you provide the number of upstream dependencies this dbt model has?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Do you know how many upstream models are connected to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What is the exact number of models that serve as upstream to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "How extensive is the network of upstream models for this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "I need to know the quantity of upstream models for this dbt model, can you assist?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What count of upstream models is this dbt model dependent on?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you specify the number of models upstream to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you assess if modifications to this dbt model will affect that dbt model through upstream model flow?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does the upstream flow from this dbt model to that dbt model indicate an impact from changes?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Will alterations in this dbt model influence that dbt model due to their upstream connection?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you determine the impact on that dbt model if this dbt model undergoes changes?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "How would changes to this dbt model affect that dbt model in terms of upstream flow?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is that dbt model likely to be impacted by changes in this dbt model, considering their upstream relationship?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Considering the upstream model flow, would modifications to this dbt model impact that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "In the context of upstream flow, how do changes to this dbt model affect that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Given their upstream connection, would changes in this dbt model pose an impact on that dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Analyzing the upstream model flow, can we predict any impact on that dbt model due to this dbt model's changes?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Are there any upstream models for this dbt model with names similar to this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you confirm if this dbt model has upstream dependencies named like this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model include any upstream models that are named in a manner resembling this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Do any upstream models of this dbt model carry names that match this description?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Is there an upstream model with a name like this linked to this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Could you check if this dbt model is connected to any upstream models named similarly to this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "What upstream models with names akin to this are associated with this dbt model?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Are there any models feeding into this dbt model that have names like this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "I'm looking for upstream models to this dbt model with names that sound like this. Do any exist?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Does this dbt model have upstream sources with names that closely resemble this?",
+    "route": "dbt_upstream_models"
+  },
+  {
+    "question": "Can you list the models that are downstream of this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What models are directly dependent on this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Which dbt models are considered downstream from this one?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you identify the downstream dependencies for this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Do you know the models that this dbt model feeds into as a downstream source?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What are the subsequent models that rely on this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "I need to know the downstream models connected to this dbt model, can you provide that?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Which models receive data from this dbt model as part of the downstream flow?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What dbt models are impacted by changes to this model, downstream-wise?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you specify which models are in the downstream lineage of this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Are there any models downstream from this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model serve as an upstream source for other models?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you confirm if there are downstream dependencies for this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Are there any dbt models that rely on this one as a source?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model an upstream source for any subsequent models?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Do any models depend on this dbt model downstream?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "I'm curious, does this dbt model have models depending on it in the workflow?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you check if this dbt model has any downstream models linked to it?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What downstream models, if any, are associated with this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model linked to any models downstream in the data pipeline?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model act as a downstream dependency for that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model positioned downstream relative to that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you confirm if this dbt model is a downstream model from that one?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Are we considering this dbt model to be downstream from that particular dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model function as a successor to that dbt model in the pipeline?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model in the role of a downstream model to that one?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you verify if this dbt model is situated downstream of that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model a direct downstream entity from that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "I'm trying to understand, is this dbt model downstream from that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "In the data flow, does this dbt model come after that dbt model, making it downstream?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you tell me the number of downstream models connected to this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What's the total count of downstream models for this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "How many models are directly dependent on this dbt model downstream?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you provide the quantity of downstream dependencies this dbt model has?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Do you know how many downstream models are linked to this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What is the exact number of models that are downstream to this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "How extensive is the network of downstream models for this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "I need to know the count of downstream models for this dbt model, can you assist?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What count of downstream models is this dbt model responsible for?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you specify the number of models that are in the downstream flow of this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you analyze if changes to that dbt model will affect this dbt model through the downstream flow?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does the downstream model flow from that dbt model to this one indicate potential impact from changes?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Will modifications in that dbt model influence this dbt model due to their downstream relationship?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you determine the effect on this dbt model if that dbt model undergoes changes?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "How would changes to that dbt model affect this dbt model in terms of downstream flow?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is this dbt model likely to be impacted by changes in that dbt model, considering their downstream connection?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Considering the downstream model flow, would alterations to that dbt model impact this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "In the context of downstream flow, how do changes to that dbt model affect this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Given their downstream connection, would changes in that dbt model have an impact on this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Analyzing the downstream model flow, can we foresee any impact on this dbt model due to alterations in that dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Are there any downstream models for this dbt model with names similar to this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Can you confirm if this dbt model has downstream dependencies named like this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model include any downstream models that are named in a manner resembling this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Do any downstream models of this dbt model carry names that match this description?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Is there a downstream model with a name like this linked to this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Could you check if this dbt model is connected to any downstream models named similarly to this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What downstream models with names akin to this are associated with this dbt model?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Are there any models receiving data from this dbt model that have names like this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "I'm looking for downstream models to this dbt model with names that sound like this. Do any exist?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "Does this dbt model have downstream sources with names that closely resemble this?",
+    "route": "dbt_downstream_models"
+  },
+  {
+    "question": "What is the capital of France?",
+    "route": null
+  },
+  {
+    "question": "how many people live in the US?",
+    "route": null
+  },
+  {
+    "question": "when is the best time to visit Bali?",
+    "route": null
+  },
+  {
+    "question": "how do I learn a language?",
+    "route": null
+  },
+  {
+    "question": "tell me an interesting fact",
+    "route": null
+  },
+  {
+    "question": "what is the best programming language?",
+    "route": null
+  },
+  {
+    "question": "I'm interested in learning about llama 2",
+    "route": null
+  }
+]
