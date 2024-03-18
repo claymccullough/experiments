@@ -27,7 +27,7 @@ gradio = "^4.19.2"
 fastapi = "^0.110.0"
 huggingface-hub = "^0.21.3"
 optimum = "^1.17.1"
-auto-gptq = "^0.7.1"
+#auto-gptq = "^0.7.1"
 
 
 [build-system]
