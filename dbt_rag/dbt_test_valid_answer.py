@@ -1,9 +1,10 @@
+import pyperclip
 from dotenv import load_dotenv
 import os
 
 from langchain_openai import ChatOpenAI
 
-from utilities.evals import eval_response
+from utilities.evals import eval_response, gen_eval_response_prompt
 
 load_dotenv('.env')
 EVAL_OPENAI_MN = os.environ.get('EVAL_OPENAI_MN')
@@ -23,6 +24,10 @@ test_cases = [
 ]
 
 if __name__ == '__main__':
+    # test_case = test_cases[0]
+    # prompt = gen_eval_response_prompt(question=test_case['question'], answer=test_case['answer'])
+    # pyperclip.copy(prompt)
+
     utility_llm = ChatOpenAI(
         verbose=True,
         temperature=0.0,
