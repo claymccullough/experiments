@@ -1,0 +1,56 @@
+## Metadata Questions
+
+How many rows does the `model.limeade_lakehouse.sil_ai_identity_events` model have?
+
+How many bytes does the `model.limeade_lakehouse.sil_ai_identity_events` model consume?
+
+When was the 'model.limeade_lakehouse.sil_ai_limeadedotcom_event' model created?
+
+How many rows does the `model.limeade_lakehouse.sil_lp_incentive_programs` model have? (N/A)
+
+What schema is model.limeade_lakehouse.sil_ai_limeadedotcom_events_slim in?
+
+
+## Code
+
+How long is the `model.limeade_lakehouse.sil_ai_identity_events` model set to retain when it VACUUMs?
+
+Does the model.limeade_lakehouse.sil_ai_identity_events model have a post_hook that computes statistics?
+
+What column does the model.limeade_lakehouse.sil_ai_limeadedotcom_events model ZORDER by in its post_hook?
+
+
+## Columns
+
+How many columns does the `model.limeade_lakehouse.sil_upmc_recommendations` model have?
+
+List out the columns for the model.limeade_lakehouse.sil_upmc_recommendations model
+
+Does the model.limeade_lakehouse.sil_ai_mobile_events model have any participant_code like columns?
+
+
+## Descriptions
+
+What is the location of the model.limeade_lakehouse.gold_stg_metrics_activity_participations model?
+
+What table stores activity features for activity recommenders?
+
+What Serde library is used for the model.limeade_lakehouse.sil_lp_integration_partners model?
+
+
+## Downstream models
+
+Which downstream models does `model.limeade_lakehouse.sil_ai_identity_events` have?
+
+Is `model.limeade_lakehouse.gold_fact_resource_utilization` a downstream model to `model.limeade_lakehouse.sil_la_application_instances`?
+
+Are there any downstream models to `model.limeade_lakehouse.gold_dim_dates`
+
+
+## Upstream models
+
+Which upstream models does `model.limeade_lakehouse.sil_ai_identity_events` have?
+
+Does `model.limeade_lakehouse.gold_dim_dates` have any upstream models?
+
+Is `model.limeade_lakehouse.gold_stg_user_events_telemetry_limeadedotcom` an upstream model to `model.limeade_lakehouse.gold_dim_user_event_types`?
