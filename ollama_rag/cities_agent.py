@@ -21,8 +21,8 @@ import os
 
 from langchain_community.vectorstores.chroma import Chroma
 
-MODEL_NAME = os.environ.get("MODEL_NAME")
-EMBEDDING_MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME")
+INFER_MODEL_NAME = os.environ.get("INFER_MODEL_NAME")
+EMBED_MODEL_NAME = os.environ.get("EMBED_MODEL_NAME")
 EMBED_BASE_URL = os.environ.get("EMBED_BASE_URL")
 INFER_BASE_URL = os.environ.get("INFER_BASE_URL")
 
@@ -40,14 +40,14 @@ if __name__ == '__main__':
     # query = 'What does Limeade use for a message bus'
     # query = "Who was the fastest random speaker in the world"
     # query = "Who led the league in scrimmage yards"
-    embedding_function = OllamaEmbeddings(model=EMBEDDING_MODEL_NAME, base_url=EMBED_BASE_URL)
+    embedding_function = OllamaEmbeddings(model=EMBED_MODEL_NAME, base_url=EMBED_BASE_URL)
     vector = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
     # Define a retriever interface
     retriever = vector.as_retriever()
 
     # Define LLM
-    llm = Ollama(model=MODEL_NAME,
+    llm = Ollama(model=INFER_MODEL_NAME,
                  base_url=INFER_BASE_URL,
                  temperature=0.9,
                  callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]))
@@ -80,9 +80,12 @@ if __name__ == '__main__':
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
         verbose=True
     )
-    while True:
-        # agent.run("""Compare the population of New York and Houston.  What is the percentage difference between the two populations?""")
-        query = input('User: ')
-        result = agent.run(query)
-        print(f'Agent: {result}')
+    # question = """Compare the population of New York and Houston.  What is the percentage difference between the two populations?"""
+    question = """What is the population of Houston TX?"""
+    result = agent.run(question)
+    print(result)
+    # while True:
+    #     # query = input('User: ')
+    #     # result = agent.run(query)
+        # print(f'Agent: {result}')
 

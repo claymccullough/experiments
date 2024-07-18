@@ -16,8 +16,8 @@ from langchain_community.vectorstores.chroma import Chroma
 GLOBALS
 """
 FILE_PATH = "./data/cities.json"
-MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME")
-BASE_URL = os.environ.get("BASE_URL")
+EMBED_MODEL_NAME = os.environ.get("EMBED_MODEL_NAME")
+EMBED_BASE_URL = os.environ.get("EMBED_BASE_URL")
 CHUNK_SIZE = 4000
 CHUNK_OVERLAP = 200
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     # Load into chroma
     print('LOADING INTO CHROMADB...')
-    embedding_function = OllamaEmbeddings(model=MODEL_NAME, base_url=BASE_URL)
+    embedding_function = OllamaEmbeddings(model=EMBED_MODEL_NAME, base_url=EMBED_BASE_URL)
     db = Chroma.from_documents(docs, embedding_function, persist_directory="./chroma_db")
 
     print('DONE')
