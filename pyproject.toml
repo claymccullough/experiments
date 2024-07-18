@@ -28,6 +28,8 @@ fastapi = "^0.110.0"
 huggingface-hub = "^0.21.3"
 optimum = "^1.17.1"
 #auto-gptq = "^0.7.1"
+scipy = "^1.14.0"
+scikit-learn = "^1.5.1"
 
 
 [build-system]
