@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "question": "Who won Super Bowl LVIII?",
+    "answer": "Kansas City Chiefs",
+    "ground_truth": "In a rematch of Super Bowl LIV from four years earlier, the American Football Conference (AFC) champion and defending Super Bowl champion Kansas City Chiefs defeated the National Football Conference (NFC) champion San Francisco 49ers 25\u201322 in overtime."
+  },
+  {
+    "id": 2,
+    "question": "Who was the head coach of the Kansas City Chiefs?",
+    "answer": "Andy Reid",
+    "ground_truth": "Head coach: Kyle Shanahan, Head coach: Andy Reid"
+  },
+  {
+    "id": 3,
+    "question": "What was the score of Super Bowl LVIII?",
+    "answer": "25-22",
+    "ground_truth": "In a rematch of Super Bowl LIV from four years earlier, the American Football Conference (AFC) champion and defending Super Bowl champion Kansas City Chiefs defeated the National Football Conference (NFC) champion San Francisco 49ers 25\u201322 in overtime."
+  },
+  {
+    "id": 4,
+    "question": "Who was the MVP of Super Bowl LVIII?",
+    "answer": "Patrick Mahomes",
+    "ground_truth": "MVP Patrick Mahomes, quarterback"
+  },
+  {
+    "id": 1,
+    "question": "Who won Super Bowl LVIII?",
+    "answer": "The Chiefs",
+    "ground_truth": "The game was played on February 11, 20[24], at Allegiant Stadium in Paradise, Nevada. This was the first Super Bowl to be held in the state of Nevada."
+  },
+  {
+    "id": 2,
+    "question": "What team won back-to-back Super Bowls since the New England Patriots in 2004?",
+    "answer": "The Chiefs",
+    "ground_truth": "The Chiefs became the first team to win back-to-back Super Bowls since the New England Patriots in 2004."
+  },
+  {
+    "id": 3,
+    "question": "What was the date of Super Bowl LVIII?",
+    "answer": "February 11, 20[24]",
+    "ground_truth": "The game was played on February 11, 20[24], at Allegiant Stadium in Paradise, Nevada."
+  },
+  {
+    "id": 4,
+    "question": "Where was Super Bowl LVIII held?",
+    "answer": "Allegiant Stadium in Paradise, Nevada",
+    "ground_truth": "The game was played on February 11, 20[24], at Allegiant Stadium in Paradise, Nevada."
+  },
+  {
+    "id": 5,
+    "question": "What was the seating capacity of Allegiant Stadium?",
+    "answer": "Not specified",
+    "ground_truth": "Due to the seating capacity of Allegiant Stadium, the game's sellout attendance of 61,629 was the smallest crowd in Super Bowl history outside of Super Bowl LV, which was played during the COVID-19 pandemic."
+  },
+  {
+    "id": 6,
+    "question": "Who was named Super Bowl Most Valuable Player (MVP)?",
+    "answer": "Patrick Mahomes",
+    "ground_truth": "Chiefs quarterback Patrick Mahomes was named Super Bowl Most Valuable Player (MVP), completing 34 of 46 passes for 333 yards, two touchdow ns, and one interception."
+  },
+  {
+    "id": 7,
+    "question": "What was the total average viewership of Super Bowl LVIII?",
+    "answer": "123.7 million",
+    "ground_truth": "Super Bowl LVIII became the most watched program in American television history, with a total of 123.7 million average viewers across all platforms, which broke the average record of 115.1 million viewers set by the previous year's Super Bowl."
+  },
+  {
+    "id": 8,
+    "question": "What was the highest unduplicated total audience in history?",
+    "answer": "More than 200 million",
+    "ground_truth": "The game saw the highest undupl icated total audience in history with more than 200 million viewers watching all or part of the game."
+  },
+  {
+    "id": 1,
+    "question": "Who were the announcers for CBS?",
+    "answer": "Jim Nantz (play-by-play), Tony Romo (analyst), Tracy Wolfson and Evan Washburn (sideline reporters), Jay Feely (special teams analyst), Gene Steratore (rules analyst)",
+    "ground_truth": "CBS: Jim Nantz (play-by-play) Tony Romo (analyst) Tracy Wolfson and Evan Washburn (sideline reporters) Jay Feely (special teams analyst) Gene Steratore (rules analyst)"
+  },
+  {
+    "id": 2,
+    "question": "What was the network broadcast for Super Bowl LVIII?",
+    "answer": "CBS (English and SAP)",
+    "ground_truth": "Network Broadcast: CBS (English and SAP)"
+  },
+  {
+    "id": 3,
+    "question": "Who were the announcers for Nickelodeon?",
+    "answer": "Noah Eagle (play-by-play), Nate Burleson (analyst), Dylan Gilmer and Dylan Schefter (sideline reporters)",
+    "ground_truth": "Nickelodeon: Noah Eagle (play-by-play) Nate Burleson (analyst) Dylan Gilmer and Dylan Schefter (sideline reporters)"
+  },
+  {
+    "id": 4,
+    "question": "What was the Nielsen rating for Super Bowl LVIII?",
+    "answer": "43.5 (national)",
+    "ground_truth": "Nielsen ratings43.5 (national)"
+  }
+]
