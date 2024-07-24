@@ -199,9 +199,9 @@ if __name__ == '__main__':
     loader = PyPDFLoader("./gen/Super_Bowl_LVIII.pdf")
     docs = loader.load()
 
-    # text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-    # splits = text_splitter.split_documents(docs)
-    # logger.info(f"splits={len(splits)}")
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    splits = text_splitter.split_documents(docs)
+    logger.info(f"splits={len(splits)}")
 
     text_splitter = SemanticChunker(OllamaEmbeddings(model=EMBED_MODEL_NAME, base_url=EMBED_BASE_URL))
     splits = text_splitter.split_documents(docs)

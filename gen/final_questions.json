@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "question": "Who won Super Bowl LVIII?",
+        "answer": "Kansas City Chiefs",
+        "ground_truth": "The final score of the game was 22-25 in favor of the Kansas City Chiefs."
+    },
+    {
+        "id": 2,
+        "question": "Who was the MVP of Super Bowl LVIII?",
+        "answer": "Patrick Mahomes",
+        "ground_truth": "Patrick Mahomes was named the MVP of the game."
+    },
+    {
+        "id": 3,
+        "question": "Where was Super Bowl LVIII held?",
+        "answer": "Allegiant Stadium, Paradise, Nevada",
+        "ground_truth": "The game took place at Allegiant Stadium in Paradise, Nevada."
+    },
+    {
+        "id": 4,
+        "question": "What was the date of Super Bowl LVIII?",
+        "answer": "February 11, 2024",
+        "ground_truth": "The game was held on February 11, 2024."
+    },
+    {
+        "id": 1,
+        "question": "Who won Super Bowl LVIII?",
+        "answer": "Kansas City Chiefs",
+        "ground_truth": "Super Bowl LVIII was an American football game played to determine the champion of the National Football League (NFL) for the 2023 season. In a rematch of Super Bowl LIV from four years earlier, the American Football Conference (AFC) champion and defending Super Bowl champion Kansas City Chiefs defeated the National"
+    },
+    {
+        "id": 2,
+        "question": "Who performed at the halftime show of Super Bowl LVIII?",
+        "answer": "Usher, featuring Alicia Keys, Jermaine Dupri",
+        "ground_truth": "Halftime showUsher, featuring Alicia Keys, Jermaine Dupri"
+    },
+    {
+        "id": 1,
+        "question": "Who won Super Bowl LVIII?",
+        "answer": "Kansas City Chiefs",
+        "ground_truth": "champion Kansas City Chiefs defeated the National Football Conference (NFC) champion San Francisco 49ers 25\u201322 in overtime."
+    },
+    {
+        "id": 2,
+        "question": "What was the final score of Super Bowl LVIII?",
+        "answer": "25\u201322",
+        "ground_truth": "champion Kansas City Chiefs defeated the National Football Conference (NFC) champion San Francisco 49ers 25\u201322 in overtime."
+    },
+    {
+        "id": 3,
+        "question": "Where was Super Bowl LVIII played?",
+        "answer": "Allegiant Stadium in Paradise, Nevada",
+        "ground_truth": "The game was played on February 11, 2024, at Allegiant Stadium in Paradise, Nevada."
+    },
+    {
+        "id": 4,
+        "question": "Who was the last team to win back-to-back Super Bowls before the Kansas City Chiefs?",
+        "answer": "New England Patriots in 2004",
+        "ground_truth": "The Chiefs became the first team to win back-to-back Super Bowls since the New England Patriots in 2004."
+    },
+    {
+        "id": 5,
+        "question": "What was significant about Super Bowl LVIII in terms of location?",
+        "answer": "First Super Bowl to be held in the state of Nevada",
+        "ground_truth": "This was the first Super Bowl to be held in the state of Nevada."
+    },
+    {
+        "id": 1,
+        "question": "Where was the Super Bowl played in 2024?",
+        "answer": "Western United States",
+        "ground_truth": "marked the third straight year that the Super Bowl had been played in the Western United States, following host cities Inglewood, California, in 2022 and Glendale, Arizona, in 2023."
+    },
+    {
+        "id": 2,
+        "question": "How many Super Bowl appearances have the Chiefs made?",
+        "answer": "four",
+        "ground_truth": "As this was the Chiefs' fourth Super Bowl appearance and third win in five years"
+    },
+    {
+        "id": 3,
+        "question": "How many Super Bowls have the Chiefs won in the last five years?",
+        "answer": "three",
+        "ground_truth": "As this was the Chiefs' fourth Super Bowl appearance and third win in five years"
+    },
+    {
+        "id": 4,
+        "question": "Who was the quarterback for the Chiefs in the Super Bowl?",
+        "answer": "Patrick",
+        "ground_truth": "Chiefs quarterback Patrick"
+    },
+    {
+        "id": 1,
+        "question": "Who was named Super Bowl Most Valuable Player?",
+        "answer": "Patrick Mahomes",
+        "ground_truth": "Chiefs quarterback Patrick Mahomes was named Super Bowl Most Valuable Player (MVP)"
+    },
+    {
+        "id": 2,
+        "question": "How many yards did Patrick Mahomes throw for in the Super Bowl?",
+        "answer": "333 yards",
+        "ground_truth": "completing 34 of 46 passes for 333 yards"
+    },
+    {
+        "id": 3,
+        "question": "What was the attendance at the Super Bowl?",
+        "answer": "61,629",
+        "ground_truth": "game's sellout attendance of 61,629 was the smallest crowd in Super Bowl history"
+    },
+    {
+        "id": 4,
+        "question": "Which network televised the Super Bowl?",
+        "answer": "CBS",
+        "ground_truth": "The game was televised nationally by CBS"
+    },
+    {
+        "id": 1,
+        "question": "Which network televised Super Bowl LVIII?",
+        "answer": "CBS",
+        "ground_truth": "The game was televised nationally by CBS, streamed on Paramount+, alternatively broadcast on youth-oriented sister network Nickelodeon, and televised on the Spanish-language network Univision."
+    },
+    {
+        "id": 2,
+        "question": "How many average viewers watched Super Bowl LVIII?",
+        "answer": "123.7 million",
+        "ground_truth": "Super Bowl LVIII became the most watched program in American television history, with a total of 123.7 million average viewers across all platforms."
+    },
+    {
+        "id": 1,
+        "question": "What was the average viewership for the Super Bowl?",
+        "answer": "200 million viewers",
+        "ground_truth": "The game saw the highest unduplicated total audience in history with more than 200 million viewers watching all or part of the game."
+    },
+    {
+        "id": 2,
+        "question": "What was the previous average viewership record for the Super Bowl?",
+        "answer": "115.1 million viewers",
+        "ground_truth": "The average record of 115.1 million viewers set by the previous year's Super Bowl."
+    },
+    {
+        "id": 3,
+        "question": "What event was the most-watched United States broadcast since the Apollo 11 moon landing?",
+        "answer": "Super Bowl",
+        "ground_truth": "It was the most-watched United States broadcast since the Apollo 11 moon landing."
+    },
+    {
+        "id": 1,
+        "question": "Which networks broadcasted the Super Bowl in the United States?",
+        "answer": "CBS, Univision, Nickelodeon, Paramount+, Vix, NFL+/NFL connected TV app/CBS Sports digital properties",
+        "ground_truth": "The context mentions CBS (English and SAP), Univision (Spanish), Nickelodeon (kids telecast), Paramount+, Vix (Spanish), NFL+/NFL connected TV app/CBS Sports digital properties as the networks that broadcasted the Super Bowl in the United States."
+    },
+    {
+        "id": 2,
+        "question": "Who were the announcers for CBS during the Super Bowl?",
+        "answer": "Jim Nantz (play-by-play), Tony Romo (analyst), Tracy Wolfson, Evan Washburn (sideline reporters), Jay Feely (special teams analyst), Gene Steratore (rules analyst)",
+        "ground_truth": "The context mentions Jim Nantz (play-by-play), Tony Romo (analyst), Tracy Wolfson, Evan Washburn (sideline reporters), Jay Feely (special teams analyst), Gene Steratore (rules analyst) as the announcers for CBS during the Super Bowl."
+    },
+    {
+        "id": 3,
+        "question": "Who were the announcers for Nickelodeon during the Super Bowl?",
+        "answer": "Noah Eagle (play-by-play), Nate Burleson (analyst)",
+        "ground_truth": "The context mentions Noah Eagle (play-by-play) and Nate Burleson (analyst) as the announcers for Nickelodeon during the Super Bowl."
+    },
+    {
+        "id": 1,
+        "question": "Who were the announcers for the radio broadcast of the Super Bowl?",
+        "answer": "Kevin Harlan (play-by-play) and Kurt Warner (analyst)",
+        "ground_truth": "Network Westwood One"
+    },
+    {
+        "id": 2,
+        "question": "What was the U.S. TV viewership for the Super Bowl?",
+        "answer": "123.7 million",
+        "ground_truth": "Nielsen ratings 43.5 (national)"
+    },
+    {
+        "id": 3,
+        "question": "Who headlined the halftime show at the Super Bowl?",
+        "answer": "Usher",
+        "ground_truth": "halftime show, headlined by Usher, peaked at"
+    },
+    {
+        "id": 1,
+        "question": "Who headlined the halftime show at the Super Bowl in February 2024?",
+        "answer": "Usher",
+        "ground_truth": "The halftime show, headlined by Usher, peaked at 129.3 million viewers."
+    },
+    {
+        "id": 2,
+        "question": "How long did the game last in February 2024?",
+        "answer": "74 minutes and 57 seconds",
+        "ground_truth": "The game lasted for 74 minutes and 57 seconds of game time, making it the longest Super Bowl in history."
+    },
+    {
+        "id": 3,
+        "question": "Which city was picked to host Super Bowl LVIII?",
+        "answer": "New Orleans",
+        "ground_truth": "On May 23, 2018, the NFL picked New Orleans to host Super Bowl LVIII."
+    }
+]
